@@ -19,6 +19,5 @@ Zombie::Zombie(std::string _name)
 // 소멸자
 Zombie::~Zombie(void)
 {
-
-
+	announce();
 }

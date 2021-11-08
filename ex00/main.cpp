@@ -7,6 +7,5 @@ int main(void)
 {
 	std::string name1 = "nono";
 	randomChump(name1);
-
 	return (0);
 }
