@@ -1,6 +1,14 @@
-//
-// Created by 정명진 on 2021/11/10.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Karen.hpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mjung <mjung@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/19 20:45:41 by mjung             #+#    #+#             */
+/*   Updated: 2021/11/19 20:50:23 by mjung            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef KAREN_H
 #define KAREN_H
@@ -11,13 +19,13 @@
 
 
 class Karen{
-	typedef struct status
+	typedef struct s_status
 	{
 		std::string name;
 		void(Karen::*ptr)(void);
 	}	t_status;
 public:
-	void complain(std::string level);
+	void complain(std::string _level);
 	Karen(void);
 
 private:
@@ -29,7 +37,5 @@ private:
 
 	void init(void);
 };
-//typedef void (Karen::*func)(void);
 
-
-#endif //EX05_KAREN_H
+#endif

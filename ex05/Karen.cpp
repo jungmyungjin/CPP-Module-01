@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Karen.cpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mjung <mjung@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/19 20:45:19 by mjung             #+#    #+#             */
+/*   Updated: 2021/11/19 20:50:18 by mjung            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Karen.hpp"
 
 /*
@@ -9,11 +21,11 @@
 //										public
 // private 함수를 호출함
 // if / elseif / else를 사용하지 않고 호출하도록 해야한다.
-void Karen::complain(std::string level)
+void Karen::complain(std::string _level)
 {
 	for (int i = 0; i < 4 ; i++)
 	{
-		if (stat[i].name == level)
+		if (stat[i].name == _level)
 		{
 			(this->*(stat[i].ptr))();
 		}
