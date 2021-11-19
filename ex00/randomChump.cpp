@@ -1,6 +1,14 @@
-//
-// Created by 정명진 on 2021/11/04.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   randomChump.cpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mjung <mjung@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/19 19:51:40 by mjung             #+#    #+#             */
+/*   Updated: 2021/11/19 20:13:05 by mjung            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "Zombie.hpp"
 
@@ -8,6 +16,8 @@
 void randomChump(std::string name)
 {
 	Zombie *new_one;
+	
 	new_one = newZombie(name);
+	new_one->announce();
 	delete new_one;
 }

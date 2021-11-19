@@ -1,6 +1,14 @@
-//
-// Created by 정명진 on 2021/11/04.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mjung <mjung@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/19 19:51:59 by mjung             #+#    #+#             */
+/*   Updated: 2021/11/19 19:52:07 by mjung            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef ZOMBIE_HPP
 #define ZOMBIE_HPP
@@ -24,4 +32,4 @@ class Zombie
 Zombie* newZombie(std::string name);
 void randomChump(std::string name);
 
-#endif //EX00_ZOMBIE_HPP
+#endif
