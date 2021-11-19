@@ -1,21 +1,29 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Karen.cpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mjung <mjung@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/19 20:52:44 by mjung             #+#    #+#             */
+/*   Updated: 2021/11/19 21:03:29 by mjung            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Karen.hpp"
 
 /*
  * 학습 목표 => 맴버 함수에 대한 포인터를 사용하자.
  * < 불평 불만 많은 "Karen"을 클래스로 구현하기 ! >
- * - if / elseif / else를 사용하지 않고 불평해야 한다.
  */
 
-//										public
-// private 함수를 호출함
-// if / elseif / else를 사용하지 않고 호출하도록 해야한다.
-void Karen::complain(std::string level)
+void Karen::complain(std::string _level)
 {
 	bool check_level = false;
 
 	for (int i = 0; i < 4 ; i++)
 	{
-		if (check_level || stat[i].name == level)
+		if (check_level || stat[i].name == _level)
 		{
 			(this->*(stat[i].ptr))();
 			check_level = true;
