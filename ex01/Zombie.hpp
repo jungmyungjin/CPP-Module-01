@@ -1,6 +1,14 @@
-//
-// Created by 정명진 on 2021/11/04.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mjung <mjung@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/19 20:06:40 by mjung             #+#    #+#             */
+/*   Updated: 2021/11/19 20:19:58 by mjung            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #ifndef ZOMBIE_HPP
 #define ZOMBIE_HPP
@@ -15,7 +23,6 @@ class Zombie
 		void announce(void);
 		void set_name(std::string _name);
 
-		Zombie(void);
 		~Zombie(void);
 
 	private:
@@ -25,4 +32,4 @@ class Zombie
 
 Zombie* zombieHorde( int N, std::string name );
 
-#endif //EX00_ZOMBIE_HPP
+#endif

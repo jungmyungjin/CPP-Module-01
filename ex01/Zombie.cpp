@@ -1,6 +1,14 @@
-//
-// Created by 정명진 on 2021/11/04.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mjung <mjung@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/19 19:53:41 by mjung             #+#    #+#             */
+/*   Updated: 2021/11/19 20:14:10 by mjung            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "Zombie.hpp"
 
@@ -15,13 +23,8 @@ void Zombie::set_name(std::string _name)
 	name_ = _name;
 }
 
-Zombie::Zombie(void)
-{
-}
-
 // 소멸자
 Zombie::~Zombie(void)
 {
-	std::cout << "die!!" << std::endl;
-
+	std::cout << "[" << name_ << "] " << "die." << std::endl;
 }

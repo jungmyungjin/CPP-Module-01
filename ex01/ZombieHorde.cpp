@@ -1,6 +1,14 @@
-//
-// Created by 정명진 on 2021/11/06.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ZombieHorde.cpp                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mjung <mjung@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/19 20:06:22 by mjung             #+#    #+#             */
+/*   Updated: 2021/11/19 20:16:06 by mjung            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "Zombie.hpp"
 
@@ -13,6 +21,9 @@
 
 Zombie* zombieHorde( int N, std::string name )
 {
+	if (N <= 0)
+		return (NULL);
+		
 	Zombie *zombie_horde = new Zombie[N];
 
 	for (int i=0; i<N; i++)
