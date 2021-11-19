@@ -6,7 +6,7 @@
 /*   By: mjung <mjung@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 20:22:55 by mjung             #+#    #+#             */
-/*   Updated: 2021/11/19 21:28:01 by mjung            ###   ########.fr       */
+/*   Updated: 2021/11/19 21:28:47 by mjung            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,6 @@
  * - 문자열을 참조를 이용하여 출력
  */;
 
-
 int main(void)
 {
 	char text[] = "HI THIS IS BRAIN";
@@ -39,9 +38,6 @@ int main(void)
 
 	std::cout << "using stringPTR : " << stringPTR << std::endl;
 	std::cout << "using stringREF : " << stringREF << std::endl;
-
-
-	
 
 	return (0);
 }
